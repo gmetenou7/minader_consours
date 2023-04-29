@@ -1,0 +1,483 @@
+
+  
+
+
+<div class="wrapper">
+
+<h2 align="center">S'inscrire</h2><br />
+   <?php //echo $message; ?>
+
+   <form method="post" id="register_form">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active_tab1" style="border:1px solid #ccc" id="form_info_perso">Informations personnelles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive_tab1" id="parcour_sco" style="border:1px solid #ccc">Informations sur le parcour scolaire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive_tab1" id="info_concour" style="border:1px solid #ccc">Informations liées au concours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link inactive_tab1" id="info_doc" style="border:1px solid #ccc">Documents</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" style="margin-top:16px;">
+        <div class="tab-pane active" id="info_perso">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Informations personnelles:</b><hr></div>
+            <div class="panel-body">
+              
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nom Complet / Full Name:</label>
+                  <input type="text" class="form-control" id="nom" name="nom" placeholder="Nom Complet / Full Name:...">
+                  <div id="nom_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Lieu de Naissance / Place of birth:</label>
+                  <input type="text" class="form-control" id="lnaissance" name="lnaissance" placeholder="Lieu de Naissance / Place of birth:...">
+                  <div id="lnaissance_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Date de naissance / Date of Birth:</label>
+              <div class="row">
+                  <div class="col-md-4">
+                    <label class="form-label">Jour / Day:</label>
+                    <input type="number" class="form-control" id="jour" name="jour" placeholder="Jour / Day:...">
+                    <div id="jour_error" class="form-text text_danger">...</div>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label">Mois / Month:</label>
+                    <select name="mois" id="mois" class="form-control">
+                        <option value="1">1</option>
+                    </select>
+                    <div id="mois_error" class="form-text text_danger">...</div>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label">Année / Year:</label>
+                    <input type="number" class="form-control" id="annee" name="annee" placeholder="Année / Year:...">
+                    <div id="annee_error" class="form-text text_danger">...</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Téléphone du candidat / Applicant's phone number:</label>
+                  <input type="tel" class="form-control" id="telc" name="telc" placeholder="Téléphone du candidat / Applicant's phone number:...">
+                  <div id="telc_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Téléphone du parent / Parent's phone number:</label>
+                  <input type="tel" class="form-control" id="telp" name="telp" placeholder="Téléphone du parent / Parent's phone number:...">
+                  <div id="telp_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Nationalité / Nationality:</label>
+                  <select name="nationalite" id="nationalite" class="form-control">
+                    <option value="N">N</option>
+                  </select>
+                  <div id="nationalite_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Sexe / Sexe:</label>
+                  <select name="sexe" id="sexe" class="form-control">
+                      <option value="M">M</option>
+                  </select>
+                  <div id="sexe_error" class="form-text text_danger">...</div>
+                </div>
+              </div>
+            </div>
+
+
+
+                <br />
+                  <div align="center">
+                    <button type="button" name="btn_info_perso" id="btn_info_perso" class="btn btn-info btn-lg">Suivant</button>
+                  </div>
+                <br />
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="form_parcour_sco">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Informations sur le parcour scolaire</b><hr></div>
+            <div class="panel-body">
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form-label">Diplome requis / Diploma required:</label>
+                  <select name="" id="" class="form-control">
+                      <option value=""></option>
+                  </select>
+                  <div id="emailHelp" class="form-text">...</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Etat / State:</label>
+                  <select name="" id="" class="form-control">
+                      <option value=""></option>
+                  </select>
+                  <div id="emailHelp" class="form-text">...</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label">Série / Series:</label>
+                  <select name="" id="" class="form-control">
+                      <option value=""></option>
+                  </select>
+                  <div id="emailHelp" class="form-text">...</div>
+                </div>
+              </div>
+              
+              <br/>
+              <div align="center">
+                <button type="button" name="previous_btn_parcour_sco" id="previous_btn_parcour_sco" class="btn btn-default btn-lg">Précédent</button>
+                <button type="button" name="btn_parcour_sco" id="btn_parcour_sco" class="btn btn-info btn-lg">Suivant</button>
+              </div>
+              <br/>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="form_info_concour">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Informations liées au concours</b> <hr></div>
+            <div class="panel-body">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label">Cycle choisi/Cycle chosen:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Option/Option:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Qualité du candidat/Nature of candidate:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label">Centre de dépot des dossiers / File deposit center:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Centre d'examen / Exam center:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Langue de Composition / Language of Composition</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label">Centre de dépot des dossiers / File deposit center:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Centre d'examen / Exam center:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Langue de Composition / Language of Composition</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label">Ecole choisi / Selected school 1:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Ecole choisi / Selected school 2:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Ecole choisi / Selected school 3:</label>
+                <select name="" id="" class="form-control">
+                    <option value=""></option>
+                </select>
+                <div id="emailHelp" class="form-text">...</div>
+              </div>
+            </div>
+              
+              <br />
+              <div align="center">
+                <button type="button" name="previous_btn_info_concour" id="previous_btn_info_concour" class="btn btn-default btn-lg">Précédent</button>
+                <button type="button" name="btn_info_concour" id="btn_info_concour" class="btn btn-success btn-lg">Suivant</button>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="form_info_doc">
+          <div class="panel panel-default">
+            <div class="panel-heading"><b>Documents</b> <hr></div>
+            <div class="panel-body">
+
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Copie certifiée conforme de l'acte de naissance datant de moins de 3 mois / Certified copy of birth certificate less than 3 months old
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Copie certifiée conforme du diplôme datant de moins de 3 mois / Certified copy of diploma less than 3 months old
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Une attestation de présentation de l'original du diplôme / A certificate of presentation of the original diploma
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Certificat médicale / Medical certificate
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Quatre photos 4 x 4 / Four 4 x 4 photos
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Une Attestation d'anciénneté comportant l'avis favorable du supérieur hiérachique / A certificate of seniority including the favorable opinion of the hierarchical superior (candidat interne / internal candidate)
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Autorisation de concourir signée du MINADER / Authorization to compete signed by MINADER (candidat interne / internal candidate)
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Un réçu de versement des droids d'inscription au concours / Receipt of payment of the registration fee for the competition
+                <span class="badge"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></span>
+              </li>
+            </ul>
+              
+              <br />
+              <div align="center">
+                <button type="button" name="previous_btn_info_doc" id="previous_btn_info_doc" class="btn btn-default btn-lg">Précédent</button>
+                <button type="button" name="btn_info_doc" id="btn_info_doc" class="btn btn-success btn-lg">Enrégistrer</button>
+              </div>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+   </form>
+
+
+
+
+
+
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $("#btn_info_perso").click(function (e) { 
+      e.preventDefault();
+
+      var filter_nom =/^[a-zA-Z0-9._éèêÉÈÊàôÀÔïÏ\'\- ]+$/;
+      var filter_lnaissance = /^[a-zA-Z0-9._éèêÉÈÊàôÀÔïÏ\'\- ]+$/;
+      var filter_nationalite = /^[a-zA-Z0-9._éèêÉÈÊàôÀÔïÏ\'\- ]+$/;
+      var filter_date_naiss = /^[0-9\ ]+$/;
+      var filter_tel = /^[0-9\-\(\)\/\+\s]*$/;
+      var filter_sexe = /^[a-zA-Z\ ]+$/;
+
+      var error_nom = '';
+      var error_lnaissance = '';
+      var error_jour = '';
+      var error_mois = '';
+      var error_annee = '';
+      var error_telc = '';
+      var error_telp = '';
+      var error_nationalite = '';
+      var error_sexe = '';
+      
+        if($('#nom').val() == ''){
+          error_nom = 'saisi le nom';
+          $('#nom_error').html(error_nom);
+          $('#nom').addClass('has-error');
+        }else if(!filter_nom.test($('#nom').val())){
+          error_nom = 'Caractère non autorisé';
+          $('#nom_error').html(error_nom);
+          $('#nom').addClass('has-error');
+        }else{
+          $('#nom_error').html('');
+          $('#nom').removeClass('has-error');
+        }
+
+        if($('#lnaissance').val() == ''){
+          error_lnaissance = 'saisi le lieu de naissance';
+          $('#lnaissance_error').html(error_lnaissance);
+          $('#lnaissance').addClass('has-error');
+        }else if(!filter_lnaissance.test($('#lnaissance').val())){
+          error_lnaissance = 'Caractère non autorisé';
+          $('#lnaissance_error').html(error_lnaissance);
+          $('#lnaissance').addClass('has-error');
+        }else{
+          $('#lnaissance_error').html('');
+          $('#lnaissance').removeClass('has-error');
+        }
+
+        
+
+        if($('#jour').val() == ''){
+          error_jour = 'saisi le jour de naissance';
+          $('#jour_error').html(error_jour);
+          $('#jour').addClass('has-error');
+        }else if(!filter_date_naiss.test($('#jour').val())){
+          error_jour = 'Caractère non autorisé';
+          $('#jour_error').html(error_jour);
+          $('#jour').addClass('has-error');
+        }else{
+          $('#jour_error').html('');
+          $('#jour').removeClass('has-error');
+        }
+
+        if($('#mois').val() == ''){
+          error_mois = 'saisi le mois de naissance';
+          $('#mois_error').html(error_mois);
+          $('#mois').addClass('has-error');
+        }else if(!filter_date_naiss.test($('#mois').val())){
+          error_mois = 'Caractère non autorisé';
+          $('#mois_error').html(error_mois);
+          $('#mois').addClass(' ');
+        }else{
+          $('#mois_error').html('');
+          $('#mois').removeClass('has-error');
+        }
+
+        if($('#annee').val() == ''){
+          error_annee = 'saisi le annee de naissance';
+          $('#annee_error').html(error_annee);
+          $('#annee').addClass('has-error');
+        }else if(!filter_date_naiss.test($('#annee').val())){
+          error_annee = 'Caractère non autorisé';
+          $('#annee_error').html(error_annee);
+          $('#annee').addClass('');
+        }else{
+          $('#annee_error').html('');
+          $('#annee').removeClass('has-error');
+        }
+
+        if($('#telc').val() == ''){
+           error_telc = 'saisi le telephone';
+          $('#telc_error').html(error_telc);
+          $('#telc').addClass('has-error');
+        }else if(!filter_tel.test($('#telc').val())){
+          error_telc = 'Caractère non autorisé';
+          $('#telc_error').html(error_telc);
+          $('#telc').addClass(' ');
+        }else{
+          $('#telc_error').html('');
+          $('#telc').removeClass('has-error');
+        }
+
+        if($('#telp').val() == ''){
+          error_telp = 'saisi le telephone';
+          $('#telp_error').html(error_telp);
+          $('#telp').addClass('has-error');
+        }else if(!filter_tel.test($('#telp').val())){
+          error_telp = 'Caractère non autorisé';
+          $('#telp_error').html(error_telp);
+          $('#telp').addClass(' ');
+        }else{
+          $('#telp_error').html('');
+          $('#telp').removeClass('has-error');
+        }
+
+        if($('#nationalite').val() == ''){
+          error_nationalite = 'saisi la nationalité';
+          $('#nationalite_error').html(error_nationalite);
+          $('#nationalite').addClass('has-error');
+        }else if(!filter_nationalite.test($('#nationalite').val())){
+          error_nationalite = 'Caractère non autorisé';
+          $('#nationalite_error').html(error_nationalite);
+          $('#nationalite').addClass('');
+        }else{
+          $('#nationalite_error').html('');
+          $('#nationalite').removeClass('has-error');
+        }
+
+        if($('#sexe').val() == ''){
+          error_sexe = 'saisi le sexe';
+          $('#sexe_error').html(error_sexe);
+          $('#sexe').addClass('has-error');
+        }else if(!filter_sexe.test($('#sexe').val())){
+          error_sexe = 'Caractère non autorisé';
+          $('#sexe_error').html(error_sexe);
+          $('#sexe').addClass('');
+        }else{
+          $('#sexe_error').html('');
+          $('#sexe').removeClass('has-error');
+        }
+
+
+
+    });
+
+
+  });
+</script>
